@@ -34,13 +34,14 @@
 
     var API_KEY = "a777dd1571f239a2bfec1588c23d4f63"
     var PASSWORD = "b01d44972961bbe6637ddb35be4f007c"
+    var SHOP_URL = "musicmashtest.myshopify.com"
 
     var customerUrl = function(customerId){
-      return "https://musicmashtest.myshopify.com/admin/customers/" + customerId + ".json"
+      return "https://" + SHOP_URL + "/admin/customers/" + customerId + ".json"
     }
 
     var orderUrl = function(orderId) {
-      return "https://musicmashtest.myshopify.com/admin/orders.json?name=" + orderId + "&status=any"
+      return "https://" + SHOP_URL + "/admin/orders.json?name=" + orderId + "&status=any"
     }
 
     var customerObj = function (url) {
