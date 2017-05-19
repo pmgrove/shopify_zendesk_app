@@ -13,5 +13,26 @@
     }
   },
   "version": "1.0",
-  "frameworkVersion": "2.0"
+  "frameworkVersion": "2.0",
+  "parameters": [
+    {
+      "name": "shopUrl",
+      "type": "text",
+      "required": true,
+      "secure": false,
+      "default": "yoursubdomain"
+    },
+    {
+      "name": "token",
+      "type": "text",
+      "required": true,
+      "secure": true
+    },
+    {
+      "name": "password",
+      "type": "text",
+      "required": true,
+      "secure": true
+    }
+  ]
 }
